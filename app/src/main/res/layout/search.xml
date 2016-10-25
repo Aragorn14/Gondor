@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+                android:background="@color/white"
+              android:tag="search">
+
+    <view
+        android:id="@+id/searchFilterView"
+        class="com.scube.Gondor.Menu.views.FilterMenuView"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:focusableInTouchMode="false"
+        android:scrollbarSize="0dp"
+        android:scrollbars="none"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_margin="0dp"
+        android:background="@color/BLACK"
+        android:focusable="false"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_margin="0dp"
+        android:background="@color/BLACK"
+        android:focusable="false"/>
+
+    <ListView
+        android:id="@+id/searchListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/white"
+        android:divider="@color/BLACK"
+        android:dividerHeight="1dp"
+        android:fastScrollAlwaysVisible="true"
+        android:fastScrollEnabled="true"
+        android:scrollbarStyle="outsideInset"/>
+
+</LinearLayout>

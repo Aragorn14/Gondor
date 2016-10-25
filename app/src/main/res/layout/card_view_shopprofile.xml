@@ -1,0 +1,101 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:card_view="http://schemas.android.com/apk/res-auto"
+android:id="@+id/card_view_mall"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:elevation="50dp"
+android:translationZ="2dp"
+android:translationX="2dp"
+android:background="@drawable/shadow_rect"
+card_view:cardCornerRadius="2dp"
+
+android:layout_marginTop="@dimen/margin_medium"
+android:layout_marginLeft="@dimen/margin_small"
+android:layout_marginRight="@dimen/margin_small"
+android:paddingTop="40dp"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    >
+
+    <ImageView
+        android:id="@+id/shopProfileBackgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:id="@+id/mallName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="40dp"
+        android:ellipsize="end"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:textAllCaps="true"
+        android:elevation="2sp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/White"
+        android:textIsSelectable="false"
+        android:textSize="12sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        />
+
+    <TextView
+        android:id="@+id/shopName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"
+        android:ellipsize="end"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:lines="1"
+        android:elevation="2sp"
+        android:textAllCaps="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/White"
+        android:textSize="15sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        />
+
+    <TextView
+        android:id="@+id/scubitCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"
+        android:ellipsize="end"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:lines="1"
+        android:elevation="2sp"
+        android:textAllCaps="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/White"
+        android:textSize="15sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/bottomGradient"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/gradient"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>
+
+</android.support.v7.widget.CardView>

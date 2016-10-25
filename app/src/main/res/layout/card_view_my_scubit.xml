@@ -1,0 +1,246 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scubit_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="50dp"
+    android:translationZ="2dp"
+    android:translationX="2dp"
+    card_view:cardCornerRadius="2dp"
+
+    android:layout_marginTop="@dimen/margin_medium"
+    android:layout_marginLeft="@dimen/margin_small"
+    android:layout_marginRight="@dimen/margin_small"
+    android:paddingTop="40dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Horizontal relative view with horizontal linear layout => (Text fields + Status triangle) -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:id="@+id/scubitCardTop"
+            >
+
+            <!-- Holds Offer Icon + OfferName and Timer Triangle View Horizontally in one line -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_alignParentTop="true"
+                android:id="@+id/mainLinearContainer">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/topTextGrid"
+                    android:layout_weight="3">
+
+                    <!-- Offer Name & Icon -->
+                    <ImageView
+                        android:id="@+id/offerIcon"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/offer_icon"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:layout_marginStart="@dimen/margin_small"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        />
+
+                    <TextView
+                        android:id="@+id/offerName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/offerIcon"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="0dp"
+                        android:paddingBottom="3dp"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:layout_marginStart="@dimen/margin_tiny"
+                        android:textSize="@dimen/heading_3"
+                        android:textStyle="bold"
+                        android:textColor="@color/grey_800"
+                        android:text="Offer Text"
+                        />
+
+                    <!-- Horizontal : Mall Icon + Name -->
+                    <ImageView
+                        android:id="@+id/mallIcon"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_below="@+id/offerIcon"
+                        android:background="@drawable/mall_icon_green"
+
+                        android:layout_marginTop="@dimen/margin_large_1"
+                        android:layout_marginStart="@dimen/margin_small"
+                        android:layout_alignParentStart="true"
+                        />
+
+                    <TextView
+                        android:id="@+id/mallName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/mallIcon"
+                        android:layout_below="@+id/offerName"
+
+                        android:layout_marginTop="@dimen/margin_large_1"
+                        android:layout_marginStart="@dimen/margin_tiny"
+
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="0dp"
+                        android:paddingBottom="3dp"
+
+                        android:textSize="@dimen/heading_4"
+                        android:textStyle="bold"
+                        android:textColor="@color/grey_700"
+                        android:text="Mall Name"
+                        />
+
+                    <!-- Horizontal : Shop Icon + Name -->
+                    <ImageView
+                        android:id="@+id/shopIcon"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_below="@+id/mallIcon"
+                        android:background="@drawable/shop_icon_green"
+
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:layout_marginStart="@dimen/margin_small"
+                        android:layout_alignParentStart="true"
+                        />
+
+                    <TextView
+                        android:id="@+id/shopName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/shopIcon"
+                        android:layout_below="@+id/mallName"
+
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:layout_marginStart="@dimen/margin_tiny"
+
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="0dp"
+                        android:paddingBottom="3dp"
+
+                        android:textSize="@dimen/heading_4"
+                        android:textStyle="bold"
+                        android:textColor="@color/grey_700"
+                        android:text="Shop Name"
+                        />
+
+                </RelativeLayout>
+
+                <!-- Timer View -->
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <com.scube.Gondor.UI.TriangleShapeView
+                        android:id="@+id/timerTriangle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </com.scube.Gondor.UI.TriangleShapeView>
+
+                    <TextView
+                        android:id="@+id/timerHeading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/heading_5"
+                        android:paddingTop="@dimen/margin_medium"
+                        android:paddingStart="0dp"
+                        android:paddingEnd="@dimen/margin_small_2"
+                        android:text="Active"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!-- Chat Icon + Owner Image + Owner Name vertical oriented with negative margin to overlap on Card Top relativelayout -->
+        <ImageView
+            android:id="@+id/chatIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/chat_icon"
+            android:layout_marginTop="-45dp"
+            android:layout_marginEnd="17dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/scubitCardTop"
+            android:adjustViewBounds="true"
+            android:elevation="22dp"
+            android:translationZ="5dp"
+            />
+
+        <ImageView
+            android:id="@+id/ownerProfileImage"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="-23dp"
+            android:layout_marginEnd="4dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/scubitCardTop"
+            android:adjustViewBounds="true"
+            android:elevation="20dp"
+            android:translationZ="5dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Aragorn"
+            android:layout_marginTop="@dimen/margin_tiny"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:layout_below="@+id/ownerProfileImage"
+            android:layout_alignParentEnd="true"
+            android:textSize="10dp"
+            android:elevation="20dp"/>
+
+        <!-- Horizontal linear layout to hold members horizontal scroll view and Relative layout of owner details -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_below="@+id/scubitCardTop"
+            android:baselineAligned="false">
+
+            <HorizontalScrollView
+                android:id="@+id/interestedMembersHorizontalScrollView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                android:layout_weight="2"
+                android:layout_marginTop="@dimen/margin_small_2">
+
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:id="@+id/interestedMembersHorizontalLinearLayout">
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

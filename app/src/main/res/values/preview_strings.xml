@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="test_drawer_item_text">Test Section</string>
+    <string name="test_offer_text">Test Offer</string>
+    <string name="test_mall_name_text">Test Offer</string>
+    <string name="test_shop_name_text">Test Offer</string>
+    <string name="test_brand_name_text">Test Offer</string>
+    <string name="test_search_cell_title">Test Search Result</string>
+    <string name="test_search_cell_subtitle">Test Search Subtitle</string>
+</resources>

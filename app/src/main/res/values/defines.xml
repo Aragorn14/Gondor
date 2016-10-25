@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="avd_dev_domain">http://10.0.2.2:3000</string>
+    <string name="geny_dev_domain">http://10.0.3.2:3000</string>
+    <string name="openshift_prod_domain">http://parkking-lotr.rhcloud.com</string>
+
+    <string name="gcm_registration_id">gcm_registration_id</string>
+    <string name="scube_device_id">sparkk_device_id</string>
+    <string name="app_version">1.0</string>
+
+    <!-- Production sender ID : Parkking google App -->
+    <string name="gcm_prd_sender_id">684967223858</string>
+    <!-- Development sender ID : Sparkk google App -->
+    <string name="gcm_dev_sender_id">121149059617</string>
+
+    <!-- SCUBE API END POINTS -->
+
+    <string name="user_profile">/user/profile</string>
+    <string name="sparkk_device_registration">/apis/device/register</string>
+    <string name="get_malls">/apis/malls</string>
+    <string name="get_shops">/apis/shops</string>
+    <string name="get_brands">/apis/brands</string>
+    <string name="search">/apis/search</string>
+    <string name="add_update_delete_scubits">/apis/scubits</string>
+    <string name="update_user_profile">/user/profile</string>
+    <string name="get_scubits_context">/apis/scubits/context</string>
+    <string name="get_scubits_by_shop_profile">/apis/scubits</string>
+    <string name="get_scubits_by_user">/apis/scubits</string>
+    <string name="post_device_id">/apis/device/user</string>
+    <string name="get_user_email_validation_status">/user/account/status</string>
+
+    <!-- Query Cases -->
+    <string name="query_case_by_mall_id">3</string>
+    <string name="query_case_by_brand_id">4</string>
+    <string name="query_case_by_shop_name">5</string>
+    <string name="query_case_all_shops_by_mall_id">6</string>
+
+    <!-- Shared Preferences -->
+    <string name="sp_nav">ScubePrefs.nav</string>
+    <string name="sp_device">ScubePrefs.device</string>
+    <string name="sp_user">ScubePrefs.user</string>
+
+    <string name="javascript_interface">JsInterface</string>
+
+    <!--User Endpoints-->
+    <string name="user_endpoint_logout">/logout</string>
+    <string name="user_endpoint_signup">/</string>
+    <string name="user_endpoint_resend">/resendUserValidateEmail</string>
+
+    <string name="user_id">userId</string>
+    <string name="scube_id">scubeId</string>
+    <string name="geny_imei">genyImei</string>
+    <string name="imei">imei</string>
+    <string name="user_session">session</string>
+    <string name="user_location">location</string>
+    <string name="user_logout">logout</string>
+    <string name="user_domain">domain</string>
+    <string name="login_type">loginType</string>
+    <string name="user_session_true">true</string>
+    <string name="user_session_false">false</string>
+    <string name="sp_latest_activity">latestActivity</string>
+    <string name="user_default_location">3</string>
+    <string name="user_first_name">userFirstName</string>
+    <string name="user_image_url">userImageUrl</string>
+    <string name="email_validation_state">emailValidationState</string>
+    <!-- Login Activity -->
+    <string name="user_logout_true">true</string>
+    <string name="user_logout_false">false</string>
+
+    <!-- Chat Related -->
+    <string name="APP_ID">21405</string>
+    <string name="AUTH_KEY">4s6aEPTszghjFL-</string>
+    <string name="AUTH_SECRET">nuWbaVnNJSnj9aE</string>
+    <string name="chat_login_flag">chatLogin</string>
+
+</resources>

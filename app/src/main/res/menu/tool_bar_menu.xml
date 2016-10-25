@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:scube="http://schemas.android.com/apk/res-auto"
+    xmlns:style="http://schemas.android.com/tools">
+
+    <item android:id="@+id/action_search"
+        android:title="@string/search_hint"
+        android:background="@drawable/ic_search_white_36dp"
+        scube:showAsAction="always"
+        scube:actionViewClass="android.support.v7.widget.SearchView"
+        android:layout_margin="10dp" />
+
+</menu>

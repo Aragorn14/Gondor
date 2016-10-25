@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Splash Screen -->
+    <integer name="splash_screen_timer">500</integer>
+    <integer name="splash_screen_together_text_timer">100</integer>
+
+    <!-- GCM Helper -->
+    <integer name="play_services_resolution_request">9000</integer>
+
+    <!-- Home Screen Section Index -->
+    <integer name="malls_section">0</integer>
+    <integer name="shops_section">1</integer>
+    <integer name="brands_section">2</integer>
+
+    <!-- Mall Adapter View Mode -->
+    <integer name="mall_list_item_mode">1</integer>
+    <integer name="mall_spinner_item_mode">2</integer>
+    <integer name="shop_list_item_mode">1</integer>
+    <integer name="shop_spinner_item_mode">2</integer>
+    <integer name="brand_list_item_mode">1</integer>
+    <integer name="brand_spinner_item_mode">2</integer>
+
+    <integer name="offer_list_item_mode">1</integer>
+    <integer name="offer_spinner_item_mode">2</integer>
+    <integer name="price_range_list_item_mode">1</integer>
+    <integer name="price_range_spinner_item_mode">2</integer>
+    <integer name="payment_type_list_item_mode">1</integer>
+    <integer name="payment_type_spinner_item_mode">2</integer>
+
+    <integer name="interested_user_profile_image_tag">1</integer>
+
+    <!-- Scubit Status Enum -->
+    <integer name="scubit_not_started">1</integer>
+    <integer name="scubit_active">2</integer>
+    <integer name="scubit_expired">3</integer>
+    <integer name="scubit_status_unknown">4</integer>
+
+</resources>

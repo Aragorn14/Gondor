@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Core Scube Theme Color-->
+    <!-- cyan 600 -->
+    <color name="colorPrimaryLight">#00ACC1</color>
+    <!-- cyan 700 -->
+    <color name="colorPrimary">#0097A7</color>
+    <!-- cyan 900 -->
+    <color name="colorPrimaryDark">#006064</color>
+    <!-- white -->
+    <color name="textColorPrimary">#FFFFFF</color>
+    <!-- grey 300 -->
+    <color name="windowBackground">#E0E0E0</color>
+    <!-- black -->
+    <color name="navigationBarColor">#000000</color>
+    <!-- pager tab bottom line color -->
+    <color name="tabsScrollColor">#FFFFFF</color>
+    <!-- ripple effect pre lollypop -->
+    <color name="colorHighlight">#B6B6B6</color>
+
+    <!-- ActionBar styles -->
+    <style name="ScubeActionBar">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <!--<item name="android:toolbarStyle">@style/MyToolbarStyle</item>-->
+    </style>
+
+    <style name="ScubeAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Main theme colors -->
+        <!--   your app branding color for the app bar -->
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <!--   darker variant for the status bar and contextual app bars -->
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!--   theme UI controls like checkboxes and text fields -->
+        <item name="android:colorAccent">@color/colorPrimary</item>
+        <!-- background for all views -->
+        <item name="android:windowBackground">@color/windowBackground</item>
+        <!-- Software nav bar color -->
+        <item name="android:navigationBarColor">@color/navigationBarColor</item>
+        <!-- Text color primary : Normally used in action bar -->
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <!-- Ripple effect -->
+        <item name="android:colorControlHighlight">@color/colorHighlight</item>
+        <!-- Make the status bar translucent and the drawer visible under it -->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+
+        <!--<item name="searchViewStyle">@style/Widget.AppCompat.Light.SearchView</item>-->
+        <item name="searchViewStyle">@style/MySearchViewStyle</item>
+        <!--<item name="android:toolbarStyle">@style/MyToolbarStyle</item>-->
+
+        <item name="editTextBackground">@drawable/abc_edit_text_material</item>
+        <item name="editTextColor">@color/textColorPrimary</item>
+    </style>
+
+    <style name="MyToolbarStyle" parent="Widget.AppCompat.Toolbar">
+        <item name="android:navigationIcon">@drawable/ic_menu_white_36dp</item>
+    </style>
+
+    <style name="MySearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <!-- Background for the search query section (e.g. EditText) -->
+        <item name="queryBackground">@color/colorPrimaryLight</item>
+            <!-- Background for the actions section (e.g. voice, submit) -->
+        <!--<item name="submitBackground">...</item>-->
+            <!-- Close button icon -->
+        <!--<item name="closeIcon"></item>-->
+            <!-- Search button icon -->
+        <item name="searchIcon">@drawable/ic_search_white_36dp</item>
+            <!-- Go/commit button icon -->
+        <!--<item name="goIcon">...</item>-->
+            <!-- Voice search button icon -->
+        <!--<item name="voiceIcon">...</item>-->
+            <!-- Commit icon shown in the query suggestion row -->
+        <!--<item name="commitIcon">...</item>-->
+            <!-- Layout for query suggestion rows -->
+        <!--<item name="suggestionRowLayout">...</item>-->
+    </style>
+
+    <string-array name="pagerTabs">
+        <item>Malls</item>
+        <item>Shops</item>
+        <item>Brands</item>
+    </string-array>
+
+    <string-array name="drawerItems">
+        <item>Home</item>
+        <item>My Scubits</item>
+        <item>Add Scubit</item>
+        <item>Settings</item>
+        <item>Logout</item>
+    </string-array>
+    <string-array name="drawerItemsNotLoggedIn">
+        <item>Home</item>
+        <item>Add Scubit</item>
+        <item>Settings</item>
+        <item>Login</item>
+    </string-array>
+
+</resources>

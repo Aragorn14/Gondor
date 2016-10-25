@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Hoverboard</string>
+    <string name="previous">previous</string>
+    <string name="rewind">rewind</string>
+    <string name="play">play</string>
+    <string name="fast_forward">fast forward</string>
+    <string name="next">next</string>
+    <string name="full_screen">full screen</string>
+    <string name="up_next_in">UP NEXT IN</string>
+    <string name="more_info">MORE INFO</string>
+    <string name="exit_fullscreen">EXIT FULLSCREEN</string>
+</resources>

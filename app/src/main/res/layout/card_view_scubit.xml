@@ -1,0 +1,250 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scubit_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="50dp"
+    android:translationZ="2dp"
+    android:translationX="2dp"
+    card_view:cardCornerRadius="2dp"
+
+    android:layout_marginTop="@dimen/margin_medium"
+    android:layout_marginLeft="@dimen/margin_small"
+    android:layout_marginRight="@dimen/margin_small"
+    android:paddingTop="40dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:id="@+id/scubitCardTop"
+            >
+
+            <!-- Holds OfferName and Timer Triangle View Horizontally in one line -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/offerIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/offer_icon"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:layout_marginStart="@dimen/margin_small"
+                    />
+
+                <!-- Offer Name -->
+                <TextView
+                    android:id="@+id/offerName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+
+                    android:ellipsize="end"
+                    android:maxLines="2"
+
+                    android:paddingStart="5dp"
+                    android:paddingEnd="0dp"
+                    android:paddingBottom="3dp"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:layout_marginStart="@dimen/margin_tiny"
+
+                    android:textSize="@dimen/heading_3"
+                    android:textStyle="bold"
+                    android:textColor="@color/grey_800"
+                    android:text="@string/test_offer_text"
+                    />
+
+                <!-- Timer View -->
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <com.scube.Gondor.UI.TriangleShapeView
+                        android:id="@+id/timerTriangle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </com.scube.Gondor.UI.TriangleShapeView>
+
+                    <TextView
+                        android:id="@+id/timerHeading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:textStyle="normal"
+                        android:textSize="@dimen/heading_5"
+                        android:paddingTop="@dimen/margin_tiny"
+                        android:paddingStart="0dp"
+                        android:paddingEnd="@dimen/margin_small_2"
+                        />
+
+                    <TextView
+                        android:id="@+id/countdownTimer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="2:25"
+                        android:textStyle="normal"
+                        android:textSize="@dimen/heading_6"
+                        android:paddingTop="@dimen/margin_medium_5"
+                        android:paddingStart="0dp"
+                        android:paddingEnd="@dimen/margin_tiny"
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!-- Horizontal : Mall Icon + Name -->
+            <ImageView
+                android:id="@+id/mallIcon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_above="@+id/shopIcon"
+                android:background="@drawable/mall_icon_green"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:layout_marginBottom="@dimen/margin_small"
+                />
+
+            <TextView
+                android:id="@+id/mallName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/mallIcon"
+                android:layout_above="@+id/shopName"
+
+                android:maxLines="1"
+
+                android:layout_marginStart="@dimen/margin_small"
+                android:layout_marginBottom="@dimen/margin_small"
+
+                android:textSize="@dimen/heading_4"
+                android:textStyle="bold"
+                android:textColor="@color/grey_700"
+                android:text="@string/test_mall_name_text"
+                />
+
+            <!-- Horizontal : Shop Icon + Name -->
+            <ImageView
+                android:id="@+id/shopIcon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/shop_icon_green"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:layout_marginBottom="@dimen/margin_small"
+                />
+
+            <TextView
+                android:id="@+id/shopName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/mallIcon"
+                android:layout_alignParentBottom="true"
+
+                android:maxLines="1"
+
+                android:layout_marginStart="@dimen/margin_small"
+                android:layout_marginBottom="@dimen/margin_small"
+
+                android:textSize="@dimen/heading_4"
+                android:textStyle="bold"
+                android:textColor="@color/grey_600"
+                android:text="@string/test_shop_name_text"
+                />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ownerProfileImage"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_below="@+id/scubitCardTop"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="-23dp"
+            android:layout_marginRight="4dp"
+            android:adjustViewBounds="true"
+            android:elevation="20dp"
+            android:translationZ="5dp"
+            />
+
+        <ImageView
+            android:id="@+id/collaborationIcon"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:background="@drawable/collaboration_icon"
+            android:layout_below="@+id/scubitCardTop"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="-45dp"
+            android:layout_marginRight="17dp"
+            android:adjustViewBounds="true"
+            android:elevation="22dp"
+            android:translationZ="5dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_below="@+id/ownerProfileImage"
+            android:layout_alignParentRight="true"
+            android:text="Aragorn"
+            android:layout_marginTop="@dimen/margin_tiny"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:textSize="12sp"
+            android:elevation="20dp"
+            android:gravity="center"/>
+
+        <RelativeLayout
+            android:id="@+id/scubitCardBottom"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/scubitCardTop">
+
+            <ImageView
+                android:id="@+id/brandWall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/margin_small"
+                android:scaleType="centerCrop"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/grey_800"
+                android:layout_marginTop="@dimen/margin_small"
+                android:alpha="0.4"/>
+
+            <TextView
+                android:id="@+id/brandName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+
+                android:ellipsize="end"
+                android:singleLine="true"
+
+                android:layout_marginLeft="@dimen/margin_medium"
+
+                android:paddingLeft="5dp"
+                android:paddingBottom="3dp"
+
+                android:textSize="@dimen/heading_5"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="@string/test_brand_name_text"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

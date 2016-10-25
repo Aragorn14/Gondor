@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SCUBE</string>
+
+    <string name="title_activity_home">SCUBE</string>
+    <string name="title_activity_feed">Feed</string>
+    <string name="title_activity_login">Login</string>
+
+    <!-- Splash Screen -->
+    <string name="splash_screen_together">together</string>
+
+    <!-- Login/Signup Screen -->
+    <string name="title_skip_button">Skip</string>
+
+    <!-- Login Request Dialog -->
+    <string name="login_request_title_to_view_scubits">Please Login to view Scubits</string>
+    <string name="login_request_title_to_add_scubit">Please Login to add Scubit</string>
+    <string name="login_alert_dialog_ok">Login</string>
+    <string name="login_alert_dialog_cancel">Cancel</string>
+    <string name="email_validation_dialog_resend">Resend</string>
+    <string name="email_validation_dialog_cancel">Cancel</string>
+    <string name="email_validation_dialog_title">Email has not been validated yet.</string>
+
+    <!-- Home Screen -->
+    <string name="scube_home">Scube Home</string>
+
+    <!-- Cells -->
+    <string name="mall_cell_text">Mall Cell</string>
+    <string name="shop_cell_text">Shop Cell</string>
+    <string name="brand_cell_text">Brand Cell</string>
+
+    <!-- Search -->
+    <string name="search_hint">Search Scube</string>
+    <string name="search_query_string">Scube Search String</string>
+
+    <!-- Side Menu Fragment Drawer -->
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <!-- Scubits -->
+    <string name="scubit_start_time">Pick Scubit Start Time</string>
+    <string name="scubit_start_date">Pick Scubit Start Date</string>
+    <string name="scubit_end_time">Pick Scubit End Time</string>
+    <string name="scubit_end_date">Pick Scubit End Date</string>
+    <string name="scubit_button_add">Add Scubit</string>
+
+    <!-- Scubit Card View -->
+    <string name="scubit_not_started">Starts in</string>
+    <string name="scubit_active">Expires in</string>
+
+    <!-- Headings -->
+    <string name="offers_heading">Offer You want to Co-Shop</string>
+    <string name="price_ranges_heading">Price Range</string>
+    <string name="payment_method_heading">Payment Method</string>
+    <string name="start_date_time_heading">START</string>
+    <string name="end_date_time_heading">END</string>
+    <string name="mall_name_heading">Mall</string>
+    <string name="shop_name_heading">Shop</string>
+    <string name="brand_name_heading">Brand</string>
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Tags used in logcat logging -->
+    <string name="GCM">GCM Handling</string>
+    <string name="GCM_intent">GCM Intent handling</string>
+    <string name="Login_Fragment">Login Fragment</string>
+    <string name="Search_Fragment">Search Fragment</string>
+    <string name="Side_Menu_Drawer_Fragment">Side Menu Drawer Fragment</string>
+    <string name="shop_profiles_fragment">Shop Profile Fragment</string>
+    <string name="Home_Activity">Home Activity</string>
+    <string name="Login_Activity_JS_Interface">Login Activity JS Interface</string>
+    <string name="Console_Log_From_Node">Console Log From Node</string>
+    <string name="Blowfish">Blowfish</string>
+    <string name="QR_Code_Fragment">QR Fragment</string>
+    <string name="Scubit_Add_Fragment">Scubit Add Fragment</string>
+    <string name="Login_Util">Login Util</string>
+    <string name="Scube_Volley">Scube Volley</string>
+
+    <!-- API Helpers -->
+    <string name="Chat_Login_Util">Chat Login Util</string>
+    <string name="User_Api_Helper">Scubit API Helper</string>
+    <string name="Device_Api_Helper">Scubit API Helper</string>
+    <string name="Scubit_Api_Helper">Scubit API Helper</string>
+    <string name="Mall_Api_Helper">Mall API Helper</string>
+    <string name="Shop_Api_Helper">Shop API Helper</string>
+    <string name="ShopProfile_Api_Helper">Shop Profile API Helper</string>
+    <string name="Brand_Api_Helper">Brand API Helper</string>
+    <string name="Search_Api_Helper">Search API Helper</string>
+    <string name="Gcm_Api_Helper">Gcm API Helper</string>
+
+    <string name="Chat_Util">Chat Util</string>
+    <string name="CHAT_LOGIN_UTIL">Chat Login Util</string>
+    <string name="ACTIVITY_SCUBITS">Scubits Activity</string>
+    <string name="FRAGMENT_SCUBITS_LIST">Scubits List Fragment</string>
+    <string name="FRAGMENT_MY_SCUBITS">My Scubits Fragment</string>
+    <string name="ADAPTER_MY_SCUBITS">My Scubits Adapter</string>
+    <string name="ACTIVITY_SCUBITS_LIST">Scubits List Activity</string>
+    <string name="ACTIVITY_CHAT">Chat Activity</string>
+    <string name="MAIN_ACTIVITY">Main Activity</string>
+    <string name="ACTIVITY_SPLASH">Splash Activity</string>
+
+    <!-- Fragments -->
+    <string name="Malls_Fragment">Malls Fragment</string>
+    <string name="Shops_Fragment">Shops Fragment</string>
+    <string name="Brands_Fragment">Brands Fragment</string>
+    <string name="ShopProfiles_Fragment">Shop Profiles Fragment</string>
+    <string name="Malls_Search_Fragment">Malls Search Fragment</string>
+    <string name="Shops_Search_Fragment">Shops Search Fragment</string>
+    <string name="Brands_Search_Fragment">Brands Search Fragment</string>
+
+    <!-- Adapters -->
+    <string name="Drawer_Adapter">Drawer Adapter</string>
+</resources>

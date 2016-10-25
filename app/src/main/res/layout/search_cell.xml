@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_margin="0dp"
+        android:background="@color/GRAY_2"
+        android:focusable="false"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/searchCellTitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:scrollHorizontally="true"
+                android:singleLine="false"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textIsSelectable="false"
+                android:text="@string/test_search_cell_title"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/searchCellContextTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/grey_800"
+                android:text="@string/test_search_cell_subtitle"
+                android:textSize="12sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/searchCellImageView"
+            android:layout_width="95dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:layout_weight="0"
+            android:adjustViewBounds="true"
+            android:maxHeight="95dp"
+            android:minHeight="95dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/image_placeholder"/>
+    </LinearLayout>
+</LinearLayout>

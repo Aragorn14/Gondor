@@ -1,0 +1,12 @@
+<resources>
+
+    <style name="Scubit_Add_Heading">
+        <item name="android:textColor">@color/scube_text</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:background">@color/DARK_GRAY</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Home pager content view -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.scube.Gondor.Menu.views.SlidingTabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="2dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        style="@style/ScubeAppTheme"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

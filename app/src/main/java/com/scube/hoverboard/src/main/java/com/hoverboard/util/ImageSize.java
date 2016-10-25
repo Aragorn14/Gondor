@@ -1,0 +1,52 @@
+package com.scube.hoverboard.src.main.java.com.hoverboard.util;
+
+/**
+ * Created by fvelasquez on 26/02/15.
+ */
+public enum ImageSize
+{
+    IGNPICO,
+    IGNICON,
+    IGNTHUMB,
+    IGNSMALL,
+    IGNCOMPACT,
+    IGNMEDIUM,
+    IGNLARGE,
+    IGNGRANDE,
+    IGNMOBILE,
+    IGNEMBED,
+    IGNW60,
+    IGNW80,
+    IGNW160,
+    IGNW180,
+    IGNW247,
+    IGNW320,
+    IGNW358,
+    IGNW400,
+    IGNW480,
+    IGNW560,
+    IGNW610,
+    IGNW624,
+    IGNW640,
+    IGNW676,
+    IGNW765,
+    IGNW800,
+    IGNW948,
+    IGNW960,
+    IGNW1024,
+    IGNW1280,
+    IGNW1670,
+    IGNH45,
+    IGNH75,
+    IGNH90,
+    IGNH160,
+    IGNH180,
+    IGNH225,
+    IGNH246,
+    IGNH270,
+    IGNH315,
+    IGNH360,
+    IGNH450,
+    IGNH540,
+    IGNH576
+}

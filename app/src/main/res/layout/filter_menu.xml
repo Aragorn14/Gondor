@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:scrollbars="none"
+    android:baselineAligned="false">
+
+    <HorizontalScrollView
+        android:id="@+id/filterHorizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_200"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/filtersView"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:scrollbars="none" />
+
+    </HorizontalScrollView>
+
+    <View
+        android:id="@+id/redHighlightView"
+        android:layout_width="40dp"
+        android:layout_height="2dp"
+        android:layout_weight="0"
+        android:background="@color/RED"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+</LinearLayout>
